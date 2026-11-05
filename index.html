@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="纸上物流路线解谜：一个口袋、有限步数、可切换的桥，以及可重放的规则试玩员。"
+    />
+    <meta name="color-scheme" content="light" />
+    <title>纸路邮局 · Paper Route</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#board">跳到路线地图</a>
+    <header class="masthead">
+      <a class="wordmark" href="./index.html" aria-label="纸路邮局首页"
+        ><span class="mark" aria-hidden="true">〒</span> 纸路邮局
+        <small>PAPER ROUTE</small></a
+      >
+      <span class="edition">离线解谜 / 规则试玩实验室</span>
+      <button id="help-open" class="text-button">怎么玩 ↗</button>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">SMALL ROUTES, GOOD DELIVERIES.</p>
+          <h1 id="page-title">把每一份心意，<br />走成一条回路。</h1>
+          <p>
+            一个口袋，几条街道。取走包裹、送对门牌，<br
+              class="desktop-break"
+            />再带着剩余的步数回到邮局。
+          </p>
+        </div>
+        <div class="postmark" aria-hidden="true">
+          <span>LOCAL DELIVERY</span><strong>04</strong
+          ><span>四段纸上旅程</span>
+        </div>
+      </section>
+      <div class="workspace">
+        <section class="map-panel" aria-labelledby="level-heading">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">今日派送单 / DISPATCH</p>
+              <h2 id="level-heading"></h2>
+            </div>
+            <span id="variant" class="pill"></span>
+          </div>
+          <div class="stats" aria-label="游戏状态">
+            <div>
+              <span>已用步数</span
+              ><strong id="moves">0 <small>/ 18</small></strong>
+            </div>
+            <div><span>口袋 · 容量 1</span><strong id="cargo">空</strong></div>
+            <div>
+              <span>送达件数</span><strong id="delivered">0 / 1</strong>
+            </div>
+          </div>
+          <div class="paper-map">
+            <div
+              id="board"
+              class="board"
+              tabindex="0"
+              role="group"
+              aria-label="路线地图，方向键或WASD移动"
+            ></div>
+            <div class="map-footer">
+              <span id="bridge-state">折纸桥 —</span
+              ><span>键盘 ↑ ↓ ← → / WASD</span>
+            </div>
+          </div>
+          <div class="legend" aria-label="地图图例">
+            <span><i class="symbol depot">〒</i>邮局 / 终点</span
+            ><span><i class="symbol parcel">a</i>取件点</span
+            ><span><i class="symbol dock">A</i>收件点</span
+            ><span><i class="symbol toggle">⏻</i>桥开关</span
+            ><span><i class="symbol courier">●</i>你的位置</span>
+          </div>
+          <div id="result" class="result" tabindex="-1" hidden></div>
+          <p id="status" class="status" role="status" aria-live="polite">
+            开始派送。
+          </p>
+          <div class="game-actions">
+            <button id="undo">↶ 撤销一步</button
+            ><button id="reset">重置本关</button
+            ><button id="hint">给我一点提示</button
+            ><button id="next-level" class="primary" hidden>下一关 →</button>
+          </div>
+          <div class="dpad" aria-label="移动按钮">
+            <button data-move="up" aria-label="向上移动">↑</button>
+            <div>
+              <button data-move="left" aria-label="向左移动">←</button
+              ><button data-move="down" aria-label="向下移动">↓</button
+              ><button data-move="right" aria-label="向右移动">→</button>
+            </div>
+          </div>
+        </section>
+        <aside class="side-panel">
+          <section class="setup" aria-labelledby="setup-heading">
+            <p class="eyebrow">CHOOSE YOUR ROUTE</p>
+            <h2 id="setup-heading">换一张派送单</h2>
+            <label for="level">关卡</label
+            ><select id="level"></select
+            ><label for="seed">路线种子 <small>0–4294967295</small></label>
+            <div class="seed-row">
+              <input
+                id="seed"
+                type="text"
+                inputmode="numeric"
+                value="20261105"
+                maxlength="10"
+              /><button id="apply-seed">应用</button>
+            </div>
+            <p class="muted">
+              种子确定四种镜像之一；同种子、同动作可完整重现。换关或应用种子会开启新一局。
+            </p>
+            <h3 id="level-theme"></h3>
+            <p id="briefing"></p>
+          </section>
+          <section class="planner" aria-labelledby="planner-heading">
+            <div class="section-label">
+              <span class="signal" aria-hidden="true"></span>
+              <p class="eyebrow">PLAYTEST / 01</p>
+            </div>
+            <h2 id="planner-heading">让规则试玩员走一次</h2>
+            <p>
+              用广度优先搜索寻找剩余最短路线。它只读棋盘、验证合法动作，<strong
+                >不是语言模型，也不冒充 AI 推理。</strong
+              >
+            </p>
+            <button id="autoplay" class="primary full">规划并自动试玩 →</button
+            ><button id="stop" class="full" hidden>暂停试玩</button>
+            <p id="planner-status" class="muted" role="status">
+              完全在本机计算，无模型调用、无网络请求。
+            </p>
+          </section>
+          <section class="replay-panel" aria-labelledby="replay-heading">
+            <p class="eyebrow">KEEP THE EVIDENCE</p>
+            <h2 id="replay-heading">把路线装进信封</h2>
+            <p>
+              导出种子与每一步动作；导入时从初态严格执行，不信任文件声称的成绩。
+            </p>
+            <div class="button-row">
+              <button id="export">导出重放</button
+              ><button id="import">导入重放</button>
+            </div>
+            <input
+              id="replay-file"
+              type="file"
+              accept=".json,application/json"
+              hidden
+            />
+            <p id="save-status" class="muted"></p>
+          </section>
+        </aside>
+      </div>
+      <section class="lab" aria-labelledby="lab-heading">
+        <div class="lab-intro">
+          <p class="eyebrow">PLAYTEST / 02 · MUTATION LAB</p>
+          <h2 id="lab-heading">同一条路线，<br />为什么送错了信？</h2>
+          <p>
+            我们在隔离的演示版本里<strong>故意移除门牌校验</strong>。规则搜索器会找出一条最短反例，在严格版本和演示变异体上逐步对照。正式游戏始终使用严格规则。
+          </p>
+          <button id="find-defect" class="dark">寻找并重现演示缺陷 ↗</button>
+        </div>
+        <div id="defect-empty" class="lab-empty">
+          <span aria-hidden="true">a ≠ B</span>
+          <p>不只看终局分数，<br />也检查「每一次投递都送对了门牌」。</p>
+        </div>
+        <div id="defect-view" hidden>
+          <div class="defect-header">
+            <span class="pill danger">人工注入缺陷 · 非真实线上故障</span
+            ><strong id="defect-step"></strong>
+          </div>
+          <div id="defect-boards" class="comparison"></div>
+          <div class="button-row">
+            <button id="defect-back">← 上一步</button
+            ><button id="defect-forward">下一步 →</button
+            ><button id="defect-export">下载缺陷报告</button>
+          </div>
+          <p id="defect-detail" role="status"></p>
+          <pre id="defect-actions" aria-label="缺陷复现动作"></pre>
+        </div>
+      </section>
+      <section class="route-log" aria-labelledby="log-heading">
+        <div>
+          <p class="eyebrow">TRACE / 当前分支</p>
+          <h2 id="log-heading">每一步都有迹可循。</h2>
+        </div>
+        <ol id="action-log"></ol>
+      </section>
+    </main>
+    <footer>
+      <strong>纸路邮局 / Paper Route</strong
+      ><span>原创关卡 · 本地存档 · 无外部资源 · AI 辅助开发披露见项目文档</span>
+    </footer>
+    <dialog id="help">
+      <div class="dialog-heading">
+        <h2>派送员入门手册</h2>
+        <button id="help-close" aria-label="关闭帮助">×</button>
+      </div>
+      <ol>
+        <li>用方向键、WASD、屏幕方向按钮，或点相邻格子移动。</li>
+        <li>走进小写 a / b 取件；你的口袋只能放一件。</li>
+        <li>把 a 送到 A，把 b 送到 B。错误门牌不收货。</li>
+        <li>经过 ⏻ 开关会切换所有折纸桥；关闭的桥不能进入。</li>
+        <li>在步数用完前送齐所有包裹，并返回 〒 邮局。</li>
+        <li>可随时撤销、重置、提示，或让规则试玩员展示路线。提示不扣分。</li>
+      </ol>
+      <p>
+        规则试玩员与缺陷搜索都使用确定性搜索，不调用真实模型。存档只存在当前浏览器；下载重放可自行留存。
+      </p>
+    </dialog>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
