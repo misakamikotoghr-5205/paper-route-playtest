@@ -1,0 +1,112 @@
+{
+  "format": "paper-route-evidence-manifest",
+  "version": 1,
+  "generatedAt": "2026-11-06T15:58:04.345Z",
+  "source": {
+    "commit": "2b935356d55f4211295d0c9b3547981fb3ee5d73",
+    "committedAt": "2026-11-05T00:51:32+00:00",
+    "note": "Source files below exactly matched this local HEAD before generation; evidence files are a later working-tree addition, not part of that commit.",
+    "files": [
+      {
+        "path": "engine.js",
+        "bytes": 10647,
+        "sha256": "3adf74cbbb9a7b566d0e4673d5046157b6220c03d246fdf273d1960982f7b47a"
+      },
+      {
+        "path": "app.js",
+        "bytes": 15889,
+        "sha256": "bdb5a9910ca0af3bebee346fe93a904ea0873a6c88d8cc68ecd62121a2acc8c1"
+      },
+      {
+        "path": "index.html",
+        "bytes": 9596,
+        "sha256": "de2983143a512c443ece6d916d39107127706fbcbb8782c5c67863260a265d8e"
+      },
+      {
+        "path": "styles.css",
+        "bytes": 16047,
+        "sha256": "bf088c5a42061a6d5ceae8a99d9a1b5c910d2586ba505cdcbe4e3d745711eae4"
+      },
+      {
+        "path": "package.json",
+        "bytes": 392,
+        "sha256": "71f2207bdceb0891a531e5d4e88c215a6e64397f46872ce8bfe56b91921cc415"
+      },
+      {
+        "path": "scripts/check.js",
+        "bytes": 1415,
+        "sha256": "f4bfded64233f6a59c563c138b07bc0afaa8eada437c2313151054549b3a4364"
+      },
+      {
+        "path": "scripts/build.js",
+        "bytes": 872,
+        "sha256": "49e4a31e4b10c0788447abeca64ab77c298d59b1f08182c8885834d73793946b"
+      },
+      {
+        "path": "tests/engine.test.js",
+        "bytes": 7598,
+        "sha256": "0fb67c22369cc51e19e1cb94105bc3c2bd4c39e59bc53a85780c05cf29b9aae3"
+      }
+    ]
+  },
+  "runtime": {
+    "node": "v24.22.0",
+    "engineVersion": 1
+  },
+  "generator": {
+    "path": "docs/evidence/generate.mjs",
+    "bytes": 9220,
+    "sha256": "6d8825e8545be73f8eb9e29efac081bef2dffa6b21d5824fe70c57f101495723"
+  },
+  "fixedSeed": 20261106,
+  "mirrorVariant": 2,
+  "files": [
+    {
+      "path": "replays/first-mile-seed-20261106.json",
+      "bytes": 370,
+      "sha256": "4306aa84dd9a2a3268eddf4cbd88f444846a7c2a73d86b101197f6584bd245ff"
+    },
+    {
+      "path": "replays/one-pocket-seed-20261106.json",
+      "bytes": 469,
+      "sha256": "985ba686178b383ca513986802e623d3023c3474c58eeaacda307032154dc98d"
+    },
+    {
+      "path": "replays/folded-bridge-seed-20261106.json",
+      "bytes": 379,
+      "sha256": "e97f1d89a388ad0aae00cec5d9770732f2fdcaac7c76891bd7799d7024a083a8"
+    },
+    {
+      "path": "replays/last-collection-seed-20261106.json",
+      "bytes": 568,
+      "sha256": "c0b4c2aa11ea7bb1231c3cd85b68e4e87fe5dcf2bfee9afaedc25751f765f387"
+    },
+    {
+      "path": "defects/injected-wrong-dock-seed-20261106.json",
+      "bytes": 1054,
+      "sha256": "85c9e89ad5781d7d71c4a4c17ce5f8eafd7bc0e9f2e9e4d43fbe204a4bb96270"
+    },
+    {
+      "path": "defects/injected-wrong-dock-seed-20261106-strict-replay.json",
+      "bytes": 265,
+      "sha256": "91e79bee915e897589d5bffd5f610f7845141fac5b81270720631625692191e7"
+    },
+    {
+      "path": "run-results.json",
+      "bytes": 34802,
+      "sha256": "e054136915fbcca726214e39514cf2b99be669dd37172c3b883b9942adaf9338"
+    },
+    {
+      "path": "run.log",
+      "bytes": 1359,
+      "sha256": "61eefd1548c5589e5b09c8dd6372f36a80db882d4ea0de93f5ff341167e51866"
+    }
+  ],
+  "limitations": [
+    "Seed selects one of four authored mirror variants, not a procedurally generated map.",
+    "Planning and defect search use deterministic breadth-first search, not an LLM.",
+    "No browser, UI import, localStorage restore, screen recording, user study or platform execution is evidenced by this run.",
+    "The wrong-dock defect is deliberately injected and isolated from normal gameplay.",
+    "Hashes identify bytes; they are not signatures or independent third-party attestation."
+  ]
+}

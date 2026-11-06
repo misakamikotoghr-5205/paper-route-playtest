@@ -1,0 +1,19 @@
+Paper Route — actual local Node.js engine run
+Generated at: 2026-11-06T15:58:04.345Z
+Source HEAD: 2b935356d55f4211295d0c9b3547981fb3ee5d73
+Engine version: 1; Node.js: v24.22.0
+Fixed seed: 20261106; mirror variant: 2
+No browser, network, account, online model or platform deployment used.
+
+first-mile: won; 12/18 moves; delivered=a; planner visited=35; strict JSON round-trip PASS; falsified result ignored PASS
+one-pocket: won; 20/38 moves; delivered=a,b; planner visited=152; strict JSON round-trip PASS; falsified result ignored PASS
+folded-bridge: won; 12/24 moves; delivered=a; planner visited=40; strict JSON round-trip PASS; falsified result ignored PASS
+last-collection: won; 28/48 moves; delivered=a,b; planner visited=398; strict JSON round-trip PASS; falsified result ignored PASS
+
+Injected defect: detected after 4 moves; searched 9 states; strict carry=a, delivered=[]; mutant carry=null, delivered=["a"]
+All 4 shorter prefixes have identical complete states; final prefix diverges PASS.
+This is a deliberate isolated wrong-dock mutation, not a discovered production bug.
+Four winning replay exports and one strict defect control satisfy the documented game-import format.
+The defect report itself is not a game-import file.
+No browser import, restore UI, screen recording or ModelScope upload was performed.
+All local evidence assertions PASS.

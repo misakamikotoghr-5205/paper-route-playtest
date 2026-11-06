@@ -1,0 +1,52 @@
+{
+  "format": "paper-route-defect",
+  "version": 1,
+  "fixture": "injected-wrong-dock-v1",
+  "levelId": "one-pocket",
+  "seed": 20261106,
+  "detected": true,
+  "visited": 9,
+  "invariant": "包裹只允许投递至同字母收件点",
+  "actions": [
+    "right",
+    "right",
+    "right",
+    "right"
+  ],
+  "initial": {
+    "format": "paper-route-replay",
+    "version": 1,
+    "levelId": "one-pocket",
+    "seed": 20261106,
+    "variant": 2,
+    "actions": [],
+    "result": {
+      "phase": "active",
+      "moves": 0,
+      "delivered": []
+    }
+  },
+  "expected": {
+    "carry": "a",
+    "delivered": [],
+    "moves": 4
+  },
+  "actual": {
+    "carry": null,
+    "delivered": [
+      "a"
+    ],
+    "moves": 4
+  },
+  "violation": {
+    "turn": 4,
+    "type": "delivery",
+    "parcel": "a",
+    "at": {
+      "x": 5,
+      "y": 5
+    },
+    "valid": false
+  },
+  "explanation": "演示变异体故意移除了收件点字母校验。严格版本保留包裹，演示变异体把它错误标记为送达。不是线上产品真实缺陷的声明。"
+}

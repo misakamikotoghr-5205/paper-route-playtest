@@ -1,0 +1,45 @@
+{
+  "format": "paper-route-replay",
+  "version": 1,
+  "levelId": "last-collection",
+  "seed": 20261106,
+  "variant": 2,
+  "actions": [
+    "up",
+    "up",
+    "right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "down",
+    "down",
+    "up",
+    "up",
+    "left",
+    "left",
+    "left",
+    "left",
+    "down",
+    "down",
+    "up",
+    "up",
+    "up",
+    "up",
+    "left",
+    "left",
+    "down",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": {
+    "phase": "won",
+    "moves": 28,
+    "delivered": [
+      "a",
+      "b"
+    ]
+  }
+}

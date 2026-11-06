@@ -1,0 +1,1685 @@
+{
+  "format": "paper-route-local-evidence",
+  "version": 1,
+  "generatedAt": "2026-11-06T15:58:04.345Z",
+  "sourceCommit": "2b935356d55f4211295d0c9b3547981fb3ee5d73",
+  "engineVersion": 1,
+  "seed": 20261106,
+  "scope": "Actual deterministic engine execution, not browser or hosted-platform evidence",
+  "winningRuns": [
+    {
+      "levelId": "first-mile",
+      "seed": 20261106,
+      "variant": 2,
+      "replayPath": "replays/first-mile-seed-20261106.json",
+      "budget": 18,
+      "planner": {
+        "algorithm": "breadth-first search",
+        "status": "solved",
+        "visited": 35
+      },
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "up",
+        "up",
+        "left",
+        "left",
+        "down",
+        "down",
+        "left",
+        "left"
+      ],
+      "initial": {
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "carry": null,
+        "delivered": [],
+        "gatesOpen": false,
+        "moves": 0,
+        "phase": "active"
+      },
+      "final": {
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "carry": null,
+        "delivered": [
+          "a"
+        ],
+        "gatesOpen": false,
+        "moves": 12,
+        "phase": "won"
+      },
+      "steps": [
+        {
+          "action": "right",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 2,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 3,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 3,
+              "type": "pickup",
+              "parcel": "a",
+              "at": {
+                "x": 4,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 4,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 5,
+            "y": 2
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 5,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 5,
+            "y": 1
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 6,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 4,
+            "y": 1
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 7,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 7,
+              "type": "delivery",
+              "parcel": "a",
+              "at": {
+                "x": 4,
+                "y": 1
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 3,
+            "y": 1
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 8,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 3,
+            "y": 2
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 9,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 10,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 11,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 12,
+          "phase": "won",
+          "events": []
+        }
+      ],
+      "strictRoundTripEqual": true,
+      "claimedResultIgnored": true
+    },
+    {
+      "levelId": "one-pocket",
+      "seed": 20261106,
+      "variant": 2,
+      "replayPath": "replays/one-pocket-seed-20261106.json",
+      "budget": 38,
+      "planner": {
+        "algorithm": "breadth-first search",
+        "status": "solved",
+        "visited": 152
+      },
+      "actions": [
+        "up",
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "down",
+        "down",
+        "left",
+        "left",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "left",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "initial": {
+        "position": {
+          "x": 1,
+          "y": 5
+        },
+        "carry": null,
+        "delivered": [],
+        "gatesOpen": false,
+        "moves": 0,
+        "phase": "active"
+      },
+      "final": {
+        "position": {
+          "x": 1,
+          "y": 5
+        },
+        "carry": null,
+        "delivered": [
+          "a",
+          "b"
+        ],
+        "gatesOpen": false,
+        "moves": 20,
+        "phase": "won"
+      },
+      "steps": [
+        {
+          "action": "up",
+          "position": {
+            "x": 1,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 2,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 3,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 4,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 4,
+              "type": "pickup",
+              "parcel": "b",
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 5,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 6,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 5,
+            "y": 4
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 7,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 5,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 8,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 8,
+              "type": "delivery",
+              "parcel": "b",
+              "at": {
+                "x": 5,
+                "y": 5
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 4,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 9,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 3,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 10,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 10,
+              "type": "pickup",
+              "parcel": "a",
+              "at": {
+                "x": 3,
+                "y": 5
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 4
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 11,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 12,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 2
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 13,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 1
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 14,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 2,
+            "y": 1
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 15,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 1,
+            "y": 1
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 16,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 16,
+              "type": "delivery",
+              "parcel": "a",
+              "at": {
+                "x": 1,
+                "y": 1
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 2
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 17,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 18,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 19,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 20,
+          "phase": "won",
+          "events": []
+        }
+      ],
+      "strictRoundTripEqual": true,
+      "claimedResultIgnored": true
+    },
+    {
+      "levelId": "folded-bridge",
+      "seed": 20261106,
+      "variant": 2,
+      "replayPath": "replays/folded-bridge-seed-20261106.json",
+      "budget": 24,
+      "planner": {
+        "algorithm": "breadth-first search",
+        "status": "solved",
+        "visited": 40
+      },
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "left",
+        "left",
+        "left",
+        "left",
+        "left",
+        "left"
+      ],
+      "initial": {
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "carry": null,
+        "delivered": [],
+        "gatesOpen": false,
+        "moves": 0,
+        "phase": "active"
+      },
+      "final": {
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "carry": null,
+        "delivered": [
+          "a"
+        ],
+        "gatesOpen": false,
+        "moves": 12,
+        "phase": "won"
+      },
+      "steps": [
+        {
+          "action": "right",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 2,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 2,
+              "type": "bridge-open",
+              "parcel": null,
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 3,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 4,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 5,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 5,
+              "type": "pickup",
+              "parcel": "a",
+              "at": {
+                "x": 6,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 7,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": true,
+          "moves": 6,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 6,
+              "type": "delivery",
+              "parcel": "a",
+              "at": {
+                "x": 7,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": true,
+          "moves": 7,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": true,
+          "moves": 8,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": true,
+          "moves": 9,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 10,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 10,
+              "type": "bridge-closed",
+              "parcel": null,
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 11,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 12,
+          "phase": "won",
+          "events": []
+        }
+      ],
+      "strictRoundTripEqual": true,
+      "claimedResultIgnored": true
+    },
+    {
+      "levelId": "last-collection",
+      "seed": 20261106,
+      "variant": 2,
+      "replayPath": "replays/last-collection-seed-20261106.json",
+      "budget": 48,
+      "planner": {
+        "algorithm": "breadth-first search",
+        "status": "solved",
+        "visited": 398
+      },
+      "actions": [
+        "up",
+        "up",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+        "down",
+        "down",
+        "up",
+        "up",
+        "left",
+        "left",
+        "left",
+        "left",
+        "down",
+        "down",
+        "up",
+        "up",
+        "up",
+        "up",
+        "left",
+        "left",
+        "down",
+        "down",
+        "down",
+        "down"
+      ],
+      "initial": {
+        "position": {
+          "x": 1,
+          "y": 5
+        },
+        "carry": null,
+        "delivered": [],
+        "gatesOpen": false,
+        "moves": 0,
+        "phase": "active"
+      },
+      "final": {
+        "position": {
+          "x": 1,
+          "y": 5
+        },
+        "carry": null,
+        "delivered": [
+          "a",
+          "b"
+        ],
+        "gatesOpen": true,
+        "moves": 28,
+        "phase": "won"
+      },
+      "steps": [
+        {
+          "action": "up",
+          "position": {
+            "x": 1,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 2,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 3,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 4,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 4,
+              "type": "bridge-open",
+              "parcel": null,
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 5,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 6,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 7,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 7,
+              "type": "pickup",
+              "parcel": "b",
+              "at": {
+                "x": 6,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "right",
+          "position": {
+            "x": 7,
+            "y": 3
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 8,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 7,
+            "y": 4
+          },
+          "carry": "b",
+          "delivered": [],
+          "gatesOpen": true,
+          "moves": 9,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 7,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 10,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 10,
+              "type": "delivery",
+              "parcel": "b",
+              "at": {
+                "x": 7,
+                "y": 5
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 7,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 11,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 7,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 12,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 6,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 13,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 5,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 14,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 4,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 15,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 16,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 16,
+              "type": "bridge-closed",
+              "parcel": null,
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 3,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 17,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 3,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 18,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 18,
+              "type": "pickup",
+              "parcel": "a",
+              "at": {
+                "x": 3,
+                "y": 5
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 4
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": false,
+          "moves": 19,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 3
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 20,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 20,
+              "type": "bridge-open",
+              "parcel": null,
+              "at": {
+                "x": 3,
+                "y": 3
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 2
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 21,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "up",
+          "position": {
+            "x": 3,
+            "y": 1
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 22,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 2,
+            "y": 1
+          },
+          "carry": "a",
+          "delivered": [
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 23,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "left",
+          "position": {
+            "x": 1,
+            "y": 1
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 24,
+          "phase": "active",
+          "events": [
+            {
+              "turn": 24,
+              "type": "delivery",
+              "parcel": "a",
+              "at": {
+                "x": 1,
+                "y": 1
+              },
+              "valid": true
+            }
+          ]
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 2
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 25,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 3
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 26,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 4
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 27,
+          "phase": "active",
+          "events": []
+        },
+        {
+          "action": "down",
+          "position": {
+            "x": 1,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "a",
+            "b"
+          ],
+          "gatesOpen": true,
+          "moves": 28,
+          "phase": "won",
+          "events": []
+        }
+      ],
+      "strictRoundTripEqual": true,
+      "claimedResultIgnored": true
+    }
+  ],
+  "injectedDefect": {
+    "fixture": "injected-wrong-dock-v1",
+    "seed": 20261106,
+    "actions": [
+      "right",
+      "right",
+      "right",
+      "right"
+    ],
+    "visited": 9,
+    "initial": {
+      "position": {
+        "x": 1,
+        "y": 5
+      },
+      "carry": null,
+      "delivered": [],
+      "gatesOpen": false,
+      "moves": 0,
+      "phase": "active"
+    },
+    "strictFinal": {
+      "position": {
+        "x": 5,
+        "y": 5
+      },
+      "carry": "a",
+      "delivered": [],
+      "gatesOpen": false,
+      "moves": 4,
+      "phase": "active"
+    },
+    "mutantFinal": {
+      "position": {
+        "x": 5,
+        "y": 5
+      },
+      "carry": null,
+      "delivered": [
+        "a"
+      ],
+      "gatesOpen": false,
+      "moves": 4,
+      "phase": "active"
+    },
+    "violation": {
+      "turn": 4,
+      "type": "delivery",
+      "parcel": "a",
+      "at": {
+        "x": 5,
+        "y": 5
+      },
+      "valid": false
+    },
+    "prefixes": [
+      {
+        "actions": [],
+        "strict": {
+          "position": {
+            "x": 1,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 0,
+          "phase": "active"
+        },
+        "mutant": {
+          "position": {
+            "x": 1,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 0,
+          "phase": "active"
+        },
+        "fullStatesEqual": true
+      },
+      {
+        "actions": [
+          "right"
+        ],
+        "strict": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active"
+        },
+        "mutant": {
+          "position": {
+            "x": 2,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 1,
+          "phase": "active"
+        },
+        "fullStatesEqual": true
+      },
+      {
+        "actions": [
+          "right",
+          "right"
+        ],
+        "strict": {
+          "position": {
+            "x": 3,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 2,
+          "phase": "active"
+        },
+        "mutant": {
+          "position": {
+            "x": 3,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 2,
+          "phase": "active"
+        },
+        "fullStatesEqual": true
+      },
+      {
+        "actions": [
+          "right",
+          "right",
+          "right"
+        ],
+        "strict": {
+          "position": {
+            "x": 4,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 3,
+          "phase": "active"
+        },
+        "mutant": {
+          "position": {
+            "x": 4,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 3,
+          "phase": "active"
+        },
+        "fullStatesEqual": true
+      },
+      {
+        "actions": [
+          "right",
+          "right",
+          "right",
+          "right"
+        ],
+        "strict": {
+          "position": {
+            "x": 5,
+            "y": 5
+          },
+          "carry": "a",
+          "delivered": [],
+          "gatesOpen": false,
+          "moves": 4,
+          "phase": "active"
+        },
+        "mutant": {
+          "position": {
+            "x": 5,
+            "y": 5
+          },
+          "carry": null,
+          "delivered": [
+            "a"
+          ],
+          "gatesOpen": false,
+          "moves": 4,
+          "phase": "active"
+        },
+        "fullStatesEqual": false
+      }
+    ],
+    "claims": {
+      "deliberatelyInjected": true,
+      "productionBugDiscovered": false,
+      "llmEvaluation": false
+    }
+  }
+}

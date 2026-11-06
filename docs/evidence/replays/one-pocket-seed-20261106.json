@@ -1,0 +1,37 @@
+{
+  "format": "paper-route-replay",
+  "version": 1,
+  "levelId": "one-pocket",
+  "seed": 20261106,
+  "variant": 2,
+  "actions": [
+    "up",
+    "up",
+    "right",
+    "right",
+    "right",
+    "right",
+    "down",
+    "down",
+    "left",
+    "left",
+    "up",
+    "up",
+    "up",
+    "up",
+    "left",
+    "left",
+    "down",
+    "down",
+    "down",
+    "down"
+  ],
+  "result": {
+    "phase": "won",
+    "moves": 20,
+    "delivered": [
+      "a",
+      "b"
+    ]
+  }
+}
