@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "project": "paper-route-playtest",
+  "recorded_at_utc": "2026-11-10T09:34:20.142779+00:00",
+  "artifact": "../media/paper-route-local-demo.mp4",
+  "duration_seconds": 158.0,
+  "bytes": 3801423,
+  "sha256": "b659851975825b638df6d7c8b701c680426dd9a6034f6835ad32e0ebba562211",
+  "video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "25/1",
+    "pix_fmt": "yuv420p",
+    "nb_read_frames": "3950"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "content": "silent; no recorded or synthesized narration"
+  },
+  "production": "15 actual native-browser still captures compiled into 16 static segments with Chinese explanations; not continuous recording",
+  "runtime_source_commit_at_capture": "c5392db0e37744014dd9a4e07038e4cc27099341",
+  "edited_real_browser_screenshots": true,
+  "continuous_screen_recording": false,
+  "raw_private_browser_screenshots_published": false,
+  "browser_chrome_accounts_unrelated_tabs_removed": true,
+  "source_images_modified_to_fabricate_ui_state": false,
+  "runtime_llm_qoder_dgx_claimed": false,
+  "actual_public_modelscope_deployment_verified": false,
+  "formal_entry_submitted": false,
+  "qa": {
+    "full_decode_exit_code": 0,
+    "full_decode_stderr_empty": true,
+    "all_16_actual_midpoints_match_expected": true,
+    "max_mean_absolute_rgb_error": 2.3146371849279834,
+    "all_raw_captures_and_compositions_visually_inspected": true,
+    "main_operator_reviewed_both_actual_video_contact_sheets": true,
+    "main_operator_reviewed_actual_full_size_midpoints": [
+      8,
+      12
+    ],
+    "reviewer_full_size_midpoints": [
+      8,
+      12,
+      15
+    ]
+  },
+  "timeline": [
+    {
+      "segment": 1,
+      "start_seconds": 0,
+      "duration_seconds": 10,
+      "title": "一个口袋，一条回路",
+      "source_capture_name": "01-title-initial.png",
+      "source_capture_sha256": "565442c1818e593109efec7b5ba3a6657fefb6455687093b3892b70ee64c5455",
+      "capture_observed_at_utc": "2026-11-10T09:25:52.776Z",
+      "crop": [
+        195,
+        205,
+        1385,
+        1168
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 2,
+      "start_seconds": 10,
+      "duration_seconds": 8,
+      "title": "规则可以读懂",
+      "source_capture_name": "02-help.png",
+      "source_capture_sha256": "6807dcf0e43e220c919d6b7963171056c74a1b83cc621e0b53ed5cbaf0960a64",
+      "capture_observed_at_utc": "2026-11-10T09:25:57.507Z",
+      "crop": [
+        510,
+        455,
+        1078,
+        805
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 3,
+      "start_seconds": 18,
+      "duration_seconds": 8,
+      "title": "先走一步",
+      "source_capture_name": "03-step-right.png",
+      "source_capture_sha256": "a12145cbecf175dd77fb008555590a58c2538d6fe5283a2c04d8c2157c617439",
+      "capture_observed_at_utc": "2026-11-10T09:26:08.683Z",
+      "crop": [
+        205,
+        90,
+        1385,
+        905
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 4,
+      "start_seconds": 26,
+      "duration_seconds": 8,
+      "title": "撤销保留选择权",
+      "source_capture_name": "04-undo.png",
+      "source_capture_sha256": "670483b5240abc25667057ed94ef7f29f53bb6b7273b11959ba4b44d4c1ec0ac",
+      "capture_observed_at_utc": "2026-11-10T09:26:09.706Z",
+      "crop": [
+        205,
+        90,
+        1385,
+        905
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 5,
+      "start_seconds": 34,
+      "duration_seconds": 12,
+      "title": "提示不替你行动",
+      "source_capture_name": "05-hint.png",
+      "source_capture_sha256": "34c44bad73b4d78b52704d44ec752a3d3e9aa22f636c80b959ecbd0e6dddd497",
+      "capture_observed_at_utc": "2026-11-10T09:26:14.183Z",
+      "crop": [
+        205,
+        90,
+        1385,
+        905
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 6,
+      "start_seconds": 46,
+      "duration_seconds": 12,
+      "title": "12步送达并返程",
+      "source_capture_name": "06-autoplay-won.png",
+      "source_capture_sha256": "746c5df20776ff943ccf4d9adf9ce22b8a529f62533b45ca9b82f3e83939ee6b",
+      "capture_observed_at_utc": "2026-11-10T09:26:24.860Z",
+      "crop": [
+        205,
+        112,
+        1385,
+        970
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 7,
+      "start_seconds": 58,
+      "duration_seconds": 6,
+      "title": "再从初态开始",
+      "source_capture_name": "07-reset.png",
+      "source_capture_sha256": "35932e0e553b0bb0ab443af94bdd9bd63e40d2f8a550488bfb83fb016b30526d",
+      "capture_observed_at_utc": "2026-11-10T09:26:42.594Z",
+      "crop": [
+        205,
+        112,
+        1385,
+        900
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 8,
+      "start_seconds": 64,
+      "duration_seconds": 14,
+      "title": "导入会重新计算",
+      "source_capture_name": "08-reimport-won.png",
+      "source_capture_sha256": "f27a5017720648baf87029d5bb5a02c39a6cb151d51f04f6bb1536fa76dce2e3",
+      "capture_observed_at_utc": "2026-11-10T09:27:26.473Z",
+      "crop": [
+        205,
+        112,
+        1385,
+        970
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 9,
+      "start_seconds": 78,
+      "duration_seconds": 8,
+      "title": "每一步都有记录",
+      "source_capture_name": "09-trace.png",
+      "source_capture_sha256": "ceb4ca896cbe07c4732e9071586e55bb18d9b4f6d70f4b8e42efe28567748898",
+      "capture_observed_at_utc": "2026-11-10T09:27:31.053Z",
+      "crop": [
+        200,
+        975,
+        1385,
+        1095
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 10,
+      "start_seconds": 86,
+      "duration_seconds": 10,
+      "title": "故意注入一个错误",
+      "source_capture_name": "10-defect-zero.png",
+      "source_capture_sha256": "e7ba398d12870648c6d6a693ea2bef90088921cebe74295c22f6d2ed8fb9877d",
+      "capture_observed_at_utc": "2026-11-10T09:27:39.910Z",
+      "crop": [
+        200,
+        350,
+        1385,
+        965
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 11,
+      "start_seconds": 96,
+      "duration_seconds": 8,
+      "title": "前三步保持一致",
+      "source_capture_name": "11-defect-three.png",
+      "source_capture_sha256": "918427fb33765d7e448f1a2f7d395fae6b55f2cc620f92eafbfe62f28a856f9c",
+      "capture_observed_at_utc": "2026-11-10T09:27:47.564Z",
+      "crop": [
+        200,
+        350,
+        1385,
+        965
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 12,
+      "start_seconds": 104,
+      "duration_seconds": 16,
+      "title": "第4步出现分歧",
+      "source_capture_name": "12-defect-divergence.png",
+      "source_capture_sha256": "6f8dededebc67e3a24e515c53f39ed0e72caacbc1a4258048c57901f8f4526bf",
+      "capture_observed_at_utc": "2026-11-10T09:27:51.738Z",
+      "crop": [
+        200,
+        350,
+        1385,
+        965
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 13,
+      "start_seconds": 120,
+      "duration_seconds": 8,
+      "title": "折纸桥：关闭",
+      "source_capture_name": "13-bridge-closed.png",
+      "source_capture_sha256": "ca1a67097a4da8587c8eae5c84392a053591756a6401e3838a28c30c908755b0",
+      "capture_observed_at_utc": "2026-11-10T09:28:16.119Z",
+      "crop": [
+        205,
+        88,
+        1385,
+        960
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 14,
+      "start_seconds": 128,
+      "duration_seconds": 8,
+      "title": "两步走到开关",
+      "source_capture_name": "14-bridge-open.png",
+      "source_capture_sha256": "f11efa65811f18a144ccd325302c52a9c07452f1c0995c9c46446fc3059c867c",
+      "capture_observed_at_utc": "2026-11-10T09:28:20.907Z",
+      "crop": [
+        205,
+        88,
+        1385,
+        960
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 15,
+      "start_seconds": 136,
+      "duration_seconds": 12,
+      "title": "刷新后重放恢复",
+      "source_capture_name": "15-browser-restore.png",
+      "source_capture_sha256": "4de7a805eb90594af095c9f00bdb8cc7afd979f25b98f2dd43ac9b74b12167eb",
+      "capture_observed_at_utc": "2026-11-10T09:28:26.281Z",
+      "crop": [
+        205,
+        88,
+        1385,
+        960
+      ],
+      "privacy_reviewed": true
+    },
+    {
+      "segment": 16,
+      "start_seconds": 148,
+      "duration_seconds": 10,
+      "title": "制作与使用边界",
+      "source_capture_name": "09-trace.png",
+      "source_capture_sha256": "ceb4ca896cbe07c4732e9071586e55bb18d9b4f6d70f4b8e42efe28567748898",
+      "capture_observed_at_utc": "2026-11-10T09:27:31.053Z",
+      "crop": [
+        200,
+        650,
+        1385,
+        1168
+      ],
+      "privacy_reviewed": true
+    }
+  ],
+  "public_poster_frames": [
+    {
+      "path": "../media/reimport-verified.png",
+      "bytes": 619431,
+      "sha256": "19f0b3dfa74e4a1ec3b4dda5e9cce58e38dfc8fe1d452a47e65a5978d9076911",
+      "kind": "actual MP4 midpoint frame; browser chrome removed before encoding"
+    },
+    {
+      "path": "../media/injected-defect.png",
+      "bytes": 554544,
+      "sha256": "5b6176a6ed5af6bf07b5b5341313a60186eaa2f268bd18d0613e114e36ca0aab",
+      "kind": "actual MP4 midpoint frame; browser chrome removed before encoding"
+    },
+    {
+      "path": "../media/bridge-restored.png",
+      "bytes": 629700,
+      "sha256": "d112b976bfd063268cb4f486b82870ade23dc545bded6729681c47c3d74d1279",
+      "kind": "actual MP4 midpoint frame; browser chrome removed before encoding"
+    }
+  ],
+  "limitations": [
+    "The game shown runs locally; this video is not evidence of ModelScope hosting, contest registration or a final entry.",
+    "BFS is deterministic rule search, not model inference. The isolated wrong-dock mutation is deliberately injected.",
+    "Only the actual flows in browser-verification-20261110.json are demonstrated, not a mobile or all-four-level browser sweep.",
+    "The video has silent Chinese explanations, not spoken narration.",
+    "Official homepage and full creation-journal template were viewed November 10; no hard duration or narration requirement was visible there."
+  ]
+}

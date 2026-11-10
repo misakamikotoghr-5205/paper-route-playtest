@@ -1,0 +1,28 @@
+{
+  "format": "paper-route-replay",
+  "version": 1,
+  "levelId": "first-mile",
+  "seed": 20261106,
+  "variant": 2,
+  "actions": [
+    "right",
+    "right",
+    "right",
+    "right",
+    "up",
+    "up",
+    "left",
+    "left",
+    "down",
+    "down",
+    "left",
+    "left"
+  ],
+  "result": {
+    "phase": "won",
+    "moves": 12,
+    "delivered": [
+      "a"
+    ]
+  }
+}

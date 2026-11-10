@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "project": "paper-route-playtest",
+  "record_type": "actual_native_browser_ui_verification",
+  "date": "2026-11-10",
+  "first_observed_at_utc": "2026-11-10T09:25:52.776Z",
+  "last_observed_at_utc": "2026-11-10T09:28:26.281Z",
+  "runtime_url": "http://127.0.0.1:5183",
+  "served_directory": "dist",
+  "operator": "main operator; observations recorded during actual CUA native browser actions",
+  "source": {
+    "head_at_capture": "c5392db0e37744014dd9a4e07038e4cc27099341",
+    "historical_manifest": "manifest.json",
+    "manifest_source_commit": "2b935356d55f4211295d0c9b3547981fb3ee5d73",
+    "source_files_verified": [
+      {
+        "path": "engine.js",
+        "bytes": 10647,
+        "sha256": "3adf74cbbb9a7b566d0e4673d5046157b6220c03d246fdf273d1960982f7b47a"
+      },
+      {
+        "path": "app.js",
+        "bytes": 15889,
+        "sha256": "bdb5a9910ca0af3bebee346fe93a904ea0873a6c88d8cc68ecd62121a2acc8c1"
+      },
+      {
+        "path": "index.html",
+        "bytes": 9596,
+        "sha256": "de2983143a512c443ece6d916d39107127706fbcbb8782c5c67863260a265d8e"
+      },
+      {
+        "path": "styles.css",
+        "bytes": 16047,
+        "sha256": "bf088c5a42061a6d5ceae8a99d9a1b5c910d2586ba505cdcbe4e3d745711eae4"
+      },
+      {
+        "path": "package.json",
+        "bytes": 392,
+        "sha256": "71f2207bdceb0891a531e5d4e88c215a6e64397f46872ce8bfe56b91921cc415"
+      },
+      {
+        "path": "scripts/check.js",
+        "bytes": 1415,
+        "sha256": "f4bfded64233f6a59c563c138b07bc0afaa8eada437c2313151054549b3a4364"
+      },
+      {
+        "path": "scripts/build.js",
+        "bytes": 872,
+        "sha256": "49e4a31e4b10c0788447abeca64ab77c298d59b1f08182c8885834d73793946b"
+      },
+      {
+        "path": "tests/engine.test.js",
+        "bytes": 7598,
+        "sha256": "0fb67c22369cc51e19e1cb94105bc3c2bd4c39e59bc53a85780c05cf29b9aae3"
+      }
+    ],
+    "source_hashes_match_historical_manifest": true,
+    "dist_runtime_assets_byte_identical_to_source": [
+      "index.html",
+      "app.js",
+      "engine.js",
+      "styles.css"
+    ],
+    "runtime_changed_for_this_record": false,
+    "historical_evidence_generator_hash_matches": true,
+    "historical_evidence_generator": {
+      "path": "docs/evidence/generate.mjs",
+      "bytes": 9220,
+      "sha256": "6d8825e8545be73f8eb9e29efac081bef2dffa6b21d5824fe70c57f101495723"
+    }
+  },
+  "seed": 20261106,
+  "mirror_variant_index": 2,
+  "mirror_variant_ui": "03",
+  "ui_cases": [
+    {
+      "case": "manual move, undo and hint",
+      "level_id": "first-mile",
+      "initial_moves": 0,
+      "budget": 18,
+      "manual_move": "right",
+      "undo_restored_initial": true,
+      "hint": {
+        "next_action": "right",
+        "remaining_shortest_actions": 12,
+        "bfs_dequeued_states": 35,
+        "executed_action": false
+      }
+    },
+    {
+      "case": "autoplay, actual export, reset and strict UI import",
+      "level_id": "first-mile",
+      "autoplay_won": true,
+      "moves": 12,
+      "budget": 18,
+      "delivered": [
+        "a"
+      ],
+      "returned_to_post_office": true,
+      "replay_export_path": "browser-export-first-mile-20261110.json",
+      "reset_cleared_completion": true,
+      "same_export_reimported_through_file_picker": true,
+      "ui_reported_validated_actions": 12,
+      "won_restored": true,
+      "forged_score_import_tested_in_browser": false,
+      "independent_file_replay_verification": {
+        "phase": "won",
+        "moves": 12,
+        "budget": 18,
+        "cargo_empty": true,
+        "returned_to_post_office": true,
+        "verification_scope": "Actual downloaded JSON replayed through the unchanged strict engine; separate from UI observation."
+      }
+    },
+    {
+      "case": "isolated deliberate wrong-dock mutation",
+      "fixture": "injected-wrong-dock-v1",
+      "level_id": "one-pocket",
+      "actions": [
+        "right",
+        "right",
+        "right",
+        "right"
+      ],
+      "observed_prefix_steps": [
+        0,
+        3,
+        4
+      ],
+      "at_step_3": {
+        "strict_carry": "a",
+        "strict_delivered": [],
+        "mutant_carry": "a",
+        "mutant_delivered": []
+      },
+      "at_step_4": {
+        "strict_carry": "a",
+        "strict_delivered": [],
+        "mutant_carry": null,
+        "mutant_delivered": [
+          "a"
+        ],
+        "invalid_delivery": true
+      },
+      "bfs_dequeued_states": 9,
+      "normal_game_state_retained": true,
+      "defect_export_path": "browser-export-defect-20261110.json",
+      "independent_file_replay_verification": {
+        "full_states_identical_through_step": 3,
+        "first_divergence_step": 4,
+        "invalid_delivery": true,
+        "bfs_dequeued_states": 9,
+        "verification_scope": "Actual downloaded report independently replayed through strict and isolated mutant engine; separate from UI observation."
+      }
+    },
+    {
+      "case": "bridge switch and actual browser refresh restore",
+      "level_id": "folded-bridge",
+      "initial_moves": 0,
+      "budget": 24,
+      "bridge_initially_open": false,
+      "actions": [
+        "right",
+        "right"
+      ],
+      "moves_after_actions": 2,
+      "bridge_after_actions_open": true,
+      "actual_browser_reload": true,
+      "restored_level_seed_moves_position_and_open_bridge": true,
+      "defect_panel_persisted": false
+    }
+  ],
+  "exports": [
+    {
+      "path": "browser-export-first-mile-20261110.json",
+      "bytes": 369,
+      "sha256": "ed19852affd40c6f865f0e47960824109d6042fe78ecd25228e6864da8ed3215",
+      "kind": "actual browser UI download, byte-preserved copy"
+    },
+    {
+      "path": "browser-export-defect-20261110.json",
+      "bytes": 1053,
+      "sha256": "7e6f48372a1c9584bbd99429332b1f0011c517987fb92fff520ec77d771288f0",
+      "kind": "actual browser UI download, byte-preserved copy"
+    }
+  ],
+  "capture_observations": [
+    {
+      "name": "01-title-initial",
+      "observed_at_utc": "2026-11-10T09:25:52.776Z",
+      "note": "真实初态；第一封信，seed 20261106，镜像03，0/18步。"
+    },
+    {
+      "name": "02-help",
+      "observed_at_utc": "2026-11-10T09:25:57.507Z",
+      "note": "实际点击怎么玩打开规则说明。"
+    },
+    {
+      "name": "03-step-right",
+      "observed_at_utc": "2026-11-10T09:26:08.683Z",
+      "note": "实际点击右移一次，角色离开邮局，界面显示已前进一步。"
+    },
+    {
+      "name": "04-undo",
+      "observed_at_utc": "2026-11-10T09:26:09.706Z",
+      "note": "实际点击撤销一步，角色回到邮局，已用步数回退。"
+    },
+    {
+      "name": "05-hint",
+      "observed_at_utc": "2026-11-10T09:26:14.183Z",
+      "note": "实际请求提示：下一步右，最短剩余12步，BFS检查35状态，提示没有执行动作。"
+    },
+    {
+      "name": "06-autoplay-won",
+      "observed_at_utc": "2026-11-10T09:26:24.860Z",
+      "note": "实际规则试玩完成：12步送齐全部包裹并返回邮局。"
+    },
+    {
+      "name": "07-reset",
+      "observed_at_utc": "2026-11-10T09:26:42.594Z",
+      "note": "实际点击重置本关，已送达标记和通关提示消失，恢复初始地图。"
+    },
+    {
+      "name": "08-reimport-won",
+      "observed_at_utc": "2026-11-10T09:27:26.473Z",
+      "note": "真实UI导入刚导出的369字节JSON，页面确认已验证并重放12步，成绩字段未被信任。"
+    },
+    {
+      "name": "09-trace",
+      "observed_at_utc": "2026-11-10T09:27:31.053Z",
+      "note": "真实当前分支动作记录12步，隔离缺陷实验入口尚未运行。"
+    },
+    {
+      "name": "10-defect-zero",
+      "observed_at_utc": "2026-11-10T09:27:39.910Z",
+      "note": "人工注入缺陷对照0/4步，两侧同初态，路径为四次右移，主游戏通关状态保留。"
+    },
+    {
+      "name": "11-defect-three",
+      "observed_at_utc": "2026-11-10T09:27:47.564Z",
+      "note": "人工缺陷对照3/4步，两侧仍携带a、已送达为空。"
+    },
+    {
+      "name": "12-defect-divergence",
+      "observed_at_utc": "2026-11-10T09:27:51.738Z",
+      "note": "实际4/4步：严格版拒绝把a交给B并仍携带a；人工变异体清空口袋并错误记已送达a。界面报告规则搜索检查9状态。"
+    },
+    {
+      "name": "13-bridge-closed",
+      "observed_at_utc": "2026-11-10T09:28:16.119Z",
+      "note": "实际切换第三关折纸桥：seed20261106，0/24步，桥已关闭。"
+    },
+    {
+      "name": "14-bridge-open",
+      "observed_at_utc": "2026-11-10T09:28:20.907Z",
+      "note": "第三关实际连续右移两步到开关：2/24步，桥已打开。"
+    },
+    {
+      "name": "15-browser-restore",
+      "observed_at_utc": "2026-11-10T09:28:26.281Z",
+      "note": "真实刷新后第三关2/24步、开关位置与桥打开状态恢复，状态文字已从动作记录恢复上一局；缺陷实验未持久化。"
+    }
+  ],
+  "raw_capture_count": 15,
+  "raw_screenshots_public": false,
+  "video": {
+    "completed_verified": false,
+    "status_at_this_record": "separate production in progress; this record does not establish a finished video"
+  },
+  "external_platform_status": {
+    "modelscope_registration_confirmed": false,
+    "public_studio_deployment_verified": false,
+    "formal_entry_submitted": false,
+    "account_terms_confirmation_pending": true
+  },
+  "verification": {
+    "actual_export_hashes_checked": true,
+    "source_manifest_eight_file_hashes_checked": true,
+    "existing_historical_evidence_verifier_passed": true,
+    "existing_tests_rerun": false,
+    "reason_tests_not_rerun": "Runtime unchanged; source byte identity and existing evidence verification checked instead."
+  },
+  "limitations": [
+    "This is a local desktop browser check, not ModelScope hosting, registration, public concept publication or final contest receipt.",
+    "One level autoplay/import, a third-level bridge/restore sequence and one isolated mutation were observed; no claim that all four levels or mobile layouts were tested in this browser session.",
+    "Planning and mutation search are deterministic BFS, not runtime LLM inference or DGX Spark usage.",
+    "The wrong-dock mutation is deliberately injected and isolated from normal gameplay, not a newly discovered production vulnerability.",
+    "Raw screenshots retain browser chrome and unrelated account context and are not published. Any later video must use separately reviewed cropped frames.",
+    "The fifteen still captures do not establish continuous recording; video completion or playback is not claimed here.",
+    "The November 6 Node-only evidence batch is preserved unchanged and is not retroactively described as browser verification.",
+    "Hashes identify bytes, not independent third-party signatures or attestation."
+  ],
+  "historical_export_comparison": [
+    {
+      "browser_export": "browser-export-first-mile-20261110.json",
+      "historical_file": "replays/first-mile-seed-20261106.json",
+      "semantic_json_equal": true,
+      "raw_bytes_identical": false,
+      "exact_difference": "Historical file has one terminal LF; browser UI download has no terminal LF."
+    },
+    {
+      "browser_export": "browser-export-defect-20261110.json",
+      "historical_file": "defects/injected-wrong-dock-seed-20261106.json",
+      "semantic_json_equal": true,
+      "raw_bytes_identical": false,
+      "exact_difference": "Historical file has one terminal LF; browser UI download has no terminal LF."
+    }
+  ]
+}
